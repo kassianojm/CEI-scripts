@@ -59,7 +59,7 @@ exchange-keys(){
 
 echo "Full script to exchange keys starting..."
 
-
+update-local-key nodefile $1
 exchange-keys nodefile $1
 
 
