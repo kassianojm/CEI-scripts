@@ -14,6 +14,7 @@ update-local-key () {
   echo "updating keys from local node to the allocated ones"
   for i in `cat $nodefile`;
   do	
+  	echo "CMD: ssh-keygen -f "/home/$USER/.ssh/known_hosts" -R $i"
 	ssh-keygen -f "/home/$USER/.ssh/known_hosts" -R $i 
   done
 }
